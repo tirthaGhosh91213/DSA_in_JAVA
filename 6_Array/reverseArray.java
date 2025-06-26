@@ -12,7 +12,7 @@ public class reverseArray {
       h--;
     }
     for(int i=0;i<arr.length;i++){
-      System.out.println("The reverse array is "+arr[i]);
+      System.out.println("The reverse array is that "+arr[i]);
     }
 
   }
