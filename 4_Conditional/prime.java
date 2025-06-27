@@ -3,7 +3,7 @@ public class prime{
   public static void main(String[] args) {
       int n=9;
       if(n==2){
-        System.out.println("n is prime ");
+        System.out.println("N is prime ");
       }
       else{
         boolean Prime = true;
@@ -13,7 +13,7 @@ public class prime{
           }
         }
        if(Prime==true){
-        System.out.println("prime");
+        System.out.println("The number is prime ");
        }
        else{
         System.out.println("composite");
