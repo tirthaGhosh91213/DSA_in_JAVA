@@ -13,7 +13,7 @@ public class prime{
           }
         }
        if(Prime==true){
-        System.out.println("The number is prime ");
+        System.out.println("The number is prime .");
        }
        else{
         System.out.println("composite");
