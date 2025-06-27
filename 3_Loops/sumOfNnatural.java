@@ -13,6 +13,6 @@ public class sumOfNnatural{
         i++;
 
       }
-      System.out.println("Sum of all natural number "+sum );
+      System.out.println("Sum of all the  natural number "+sum );
   }
 }
