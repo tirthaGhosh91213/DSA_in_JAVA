@@ -7,7 +7,7 @@ public class unary{
 
     int a=10;
       int b=++a;
-      System.out.println(a); //11
-      System.out.println(b); //11
+      System.out.println("The original number is "+a); //11
+      System.out.println("The updated number is "+b); //11
   }
 }
