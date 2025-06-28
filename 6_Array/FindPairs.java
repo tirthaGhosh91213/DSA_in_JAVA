@@ -1,25 +1,25 @@
-import java.util.*;
 
 public class FindPairs {
+    public static void findPairs(int arr[]){
+        int tp=0;
+        for(int i=0 ; i<arr.length ; i++){
+            int curr=arr[i];
+            for(int j=i+1;j<arr.length;j++){
+                System.out.print("("+curr+","+arr[j]+")");
+                tp++;
+            }
+
+            System.out.println();
+        }
+         System.out.println("The number of pairs => "+tp);
+    }
 
     public static void main(String[] args) {
-        int[] arr = {1, 4, 7, 6, 3, 5, 9, 2};
-        int targetSum = 10;
+        int arr[] = {1, 4, 7, 6, 3, 5, 9, 2};
+        
 
-        findPairs(arr, targetSum);
+        findPairs(arr);
     }
 
-    public static void findPairs(int[] arr, int targetSum) {
-        HashMap<Integer, Boolean> seen = new HashMap<>();
-        System.out.println("Pairs with sum " + targetSum + ":");
-
-        for (int num : arr) {
-            int complement = targetSum - num;
-
-            if (seen.getOrDefault(complement, false)) {
-                System.out.println("(" + complement + ", " + num + ")");
-            }
-            seen.put(num, true);
-        }
-    }
+    
 }
