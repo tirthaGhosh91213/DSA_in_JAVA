@@ -16,6 +16,6 @@ public class buyAndSellStock {
   public static void main(String[] args) {
       int arr[]={7,1,5,3,6,4};
       int result=buyShell(arr);
-      System.out.println(("The maxprofit = "+result));
+      System.out.println(("The maximum profit of the Stock = "+result));
   }
 }
