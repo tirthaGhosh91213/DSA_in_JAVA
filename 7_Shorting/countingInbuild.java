@@ -1,15 +1,11 @@
 
  import java.util.Arrays;
 public class countingInbuild {
-
-    public static void countingSort(int[] arr) {
-        
-
-        
-        int max = Arrays.stream(arr).max().orElse(Integer.MIN_VALUE);
+  
+public static void countingSort(int[] arr) {
+    int max = Arrays.stream(arr).max().orElse(Integer.MIN_VALUE);
 
         int[] count = new int[max + 1];
-
         for (int num : arr) {
             count[num]++;
         }
@@ -23,13 +19,11 @@ public class countingInbuild {
         }
     }
 
-
-    public static void inbuiltSort(int[] arr) {
+  public static void inbuiltSort(int[] arr) {
         Arrays.sort(arr); 
     }
 
-    
-    public static void printArray(int[] arr) {
+   public static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num + " ");
         }
