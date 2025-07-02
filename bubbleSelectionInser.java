@@ -74,17 +74,17 @@ public class bubbleSelectionInser {
         printArray(bubbleArray);
 
         // Insertion Sort
-        System.out.println("\nOriginal Array for Insertion Sort:");
+        System.out.println("\nOriginal Array for Insertion Sort=");
         printArray(insertionArray);
         insertionSort(insertionArray);
-        System.out.println("Sorted Array (Insertion Sort):");
+        System.out.println("Sorted Array (Insertion Sort)=");
         printArray(insertionArray);
 
         // Selection Sort
-        System.out.println("\nOriginal Array for Selection Sort:");
+        System.out.println("\nOriginal Array for Selection Sort=");
         printArray(selectionArray);
         selectionSort(selectionArray);
-        System.out.println("Sorted Array (Selection Sort):");
+        System.out.println("Sorted Array (Selection Sort)=");
         printArray(selectionArray);
     }
 
