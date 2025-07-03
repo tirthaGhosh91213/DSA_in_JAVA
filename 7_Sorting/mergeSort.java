@@ -5,13 +5,9 @@
         if (left < right) {
             
             int mid = left + (right - left) / 2;
-
-          
             MergeSort(arr, left, mid);
             MergeSort(arr, mid + 1, right);
-
-            
-            merge(arr, left, mid, right);
+             merge(arr, left, mid, right);
         }
     }
 
@@ -20,8 +16,6 @@
        
         int n1 = mid - left + 1;
         int n2 = right - mid;
-
-       
         int[] L = new int[n1];
         int[] R = new int[n2];
 
@@ -30,10 +24,7 @@
             L[i] = arr[left + i];
         for (int j = 0; j < n2; j++)
             R[j] = arr[mid + 1 + j];
-
-        
-
-        int i = 0, j = 0;
+         int i = 0, j = 0;
         int k = left;
 
         while (i < n1 && j < n2) {
