@@ -7,6 +7,6 @@ public class areaOfCircle{
       Scanner sc=new Scanner(System.in);
       float rad=sc.nextFloat();
       float area =3.14f*rad*rad;
-      System.out.println(area);
+      System.out.println("The area of the circle is :- "+area);
   }
 }
