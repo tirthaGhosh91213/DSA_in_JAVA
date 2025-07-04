@@ -1,6 +1,6 @@
 
  import java.util.Arrays;
-public class countingInbuild {
+public class countingInbuild{
   
 public static void countingSort(int[] arr) {
     int max = Arrays.stream(arr).max().orElse(Integer.MIN_VALUE);

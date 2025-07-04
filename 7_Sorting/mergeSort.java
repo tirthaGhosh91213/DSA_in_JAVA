@@ -1,5 +1,5 @@
 
-  public class mergeSort {
+  public class mergeSort{
 
     public static void MergeSort(int[] arr, int left, int right) {
         if (left < right) {
