@@ -12,7 +12,7 @@ public class basic{
      System.out.println("The marks obtained by the student in chemistry :- "+marks[2]);
      marks[0]=marks[0]+5;
      System.out.println("In matha "+marks[0]);
-     System.out.println("Length of the array is :- "+marks.length);
+     System.out.println("Length of the array = "+marks.length);
 
  
   }
