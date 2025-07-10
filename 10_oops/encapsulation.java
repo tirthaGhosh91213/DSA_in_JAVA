@@ -1,0 +1,9 @@
+
+
+public class encapsulation {
+  public static void main(String[] args) {
+    int num=7;
+    int jercyNo=2;
+    System.out.println("Hey tirtha "+num+" your number is "+jercyNo);
+  }
+}
