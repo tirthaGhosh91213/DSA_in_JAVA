@@ -16,6 +16,6 @@ public class compraceString {
   }
   public static void main(String[] args) {
     String str="aaaabbbbcccc";
-    System.out.println(comprace(str));
+    System.out.println("The compraced string is "+comprace(str));
   }
 }
