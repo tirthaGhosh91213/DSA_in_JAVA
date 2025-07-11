@@ -16,7 +16,7 @@ public class prime{
         System.out.println("The number is prime .");
        }
        else{
-        System.out.println("composite");
+        System.out.println("The number is Composite");
        }
        }
       }
