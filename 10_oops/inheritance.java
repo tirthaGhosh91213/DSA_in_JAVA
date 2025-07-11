@@ -25,7 +25,6 @@ public class inheritance {
     public static void main(String[] args) {
         inheritance outer = new inheritance();
         Puppy puppy = outer.new Puppy();
-
         puppy.eat();   
         puppy.bark();  
         puppy.weep();  
