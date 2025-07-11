@@ -1,32 +1,33 @@
 public class inheritance {
 
-    // Superclass
+    // Base class (level 1)
     class Animal {
-        String name;
-
-        public void eat() {
-            System.out.println(name + " is eating...");
-        }
-
-        public void sleep() {
-            System.out.println(name + " is sleeping...");
+        void eat() {
+            System.out.println("Animal is eating...");
         }
     }
 
-    // Subclass
+    // Derived class (level 2)
     class Dog extends Animal {
-        public void bark() {
-            System.out.println(name + " is barking...");
+        void bark() {
+            System.out.println("Dog is barking...");
         }
     }
 
+    // Derived class (level 3)
+    class Puppy extends Dog {
+        void weep() {
+            System.out.println("Puppy is weeping...");
+        }
+    }
+
+    
     public static void main(String[] args) {
         inheritance outer = new inheritance();
-        Dog dog = outer.new Dog(); 
-        dog.name = "Tommy";
+        Puppy puppy = outer.new Puppy();
 
-        dog.eat();   
-        dog.sleep();  
-        dog.bark();   
+        puppy.eat();   
+        puppy.bark();  
+        puppy.weep();  
     }
 }
