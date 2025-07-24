@@ -9,7 +9,7 @@ public class fumctionInArr {
     int marks[]={90,89,92};
     update(marks);
     for(int i=0;i<marks.length;i++){
-      System.out.println("The incresed marks is "+marks[i]+" ");
+      System.out.println("The incresed marks = "+marks[i]+" ");
     }
   }
 }
