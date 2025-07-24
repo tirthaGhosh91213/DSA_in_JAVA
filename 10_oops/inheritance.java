@@ -17,7 +17,7 @@ public class inheritance {
    
     class Puppy extends Dog {
         void weep() {
-            System.out.println("Puppy is weeping...");
+            System.out.println("Puppy is weeping---...");
         }
     }
 
