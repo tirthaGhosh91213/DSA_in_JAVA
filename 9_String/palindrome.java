@@ -15,13 +15,13 @@ public class palindrome {
     String str="madam";
     boolean result=Palindrome(str);
     if(result==true){
-      System.out.println("The string is a Palindrome");
+      System.out.println("The string is a Palindrome =");
       
 
 
     }
     else{
-      System.out.println("The string is not a Palindrome");
+      System.out.println("The string is not a Palindrome =");
     }
   }
 }

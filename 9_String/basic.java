@@ -13,7 +13,7 @@ public class basic {
     String firstName="Tirtha ";
     String secondName="Ghosh";
     String fullName=firstName+" "+secondName;
-    System.out.println("Full Name is: "+fullName);
+    System.out.println("Full Name is= "+fullName);
     System.out.println(fullName.charAt(0));
     for(int i=0;i<fullName.length();i++){
       System.out.print(fullName.charAt(i)+" ");

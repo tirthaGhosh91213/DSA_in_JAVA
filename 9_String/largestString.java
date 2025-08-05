@@ -8,7 +8,7 @@ public class largestString {
       }
      
     }
-    System.out.println(largest);
+    System.out.println(" The largest sentance = "+largest);
     
   }
 }

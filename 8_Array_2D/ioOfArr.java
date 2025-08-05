@@ -12,7 +12,7 @@ public class ioOfArr {
                 }
             }
         }
-        System.out.println("Element not found");
+        System.out.println("Element not found 🥹");
         return false;                  
     }
 
@@ -38,6 +38,6 @@ public class ioOfArr {
         }
 
         boolean found = search(matrix, 8);     
-        System.out.println("Search result = " + found);
+        System.out.println("Search result : " + found);
     }
 }
