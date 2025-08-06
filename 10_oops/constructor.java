@@ -36,12 +36,21 @@ class Student {
   String password;
   int marks[];
 
-  // Copy constructor (deep copy)
-  Student(Student s1) {
+  // Copy constructor (shallow  copy)
+  /*Student(Student s1) {
     marks = new int[3];
     this.name = s1.name;
     this.age = s1.age;
     this.marks= s1.marks;
+  }
+    */
+  Student(Student s1){
+    marks = new int[3];
+    this.name = s1.name;
+    this.age = s1.age;
+    for(int i=0;i<marks.length;i++){
+      this.marks[i]=s1.marks[i];
+    }
   }
 
   // String constructor
