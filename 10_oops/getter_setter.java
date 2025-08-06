@@ -1,4 +1,5 @@
 public class getter_setter {
+  
   public static void main(String[] args) {
     Pen obj=new Pen();
     obj.setColor("Blue");
@@ -25,3 +26,4 @@ class Pen{
     this.tip=tip;
   }
 }
+

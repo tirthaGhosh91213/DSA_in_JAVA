@@ -1,6 +1,8 @@
 import java.util.*;
-
 public class basic {
+  
+
+
   public static void main(String[] args) {
     int marks[]=new int[10];
      Scanner sc=new Scanner(System.in);
@@ -17,3 +19,4 @@ public class basic {
  
   }
 }
+
