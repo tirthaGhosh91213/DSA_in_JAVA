@@ -1,5 +1,5 @@
 import java.util.*;
-public class basic {
+public class Basic {
   
 
 
@@ -19,4 +19,3 @@ public class basic {
  
   }
 }
-
