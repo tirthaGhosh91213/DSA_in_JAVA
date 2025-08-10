@@ -1,32 +1,33 @@
 public class inheritance {
 
-  
-    class Animal {
+    static class Animal {
         void eat() {
             System.out.println("Animal is eating......");
         }
     }
 
-    
-    class Dog extends Animal {
+    static class Dog extends Animal {
         void bark() {
             System.out.println("Dog is barking......");
         }
     }
 
-   
-    class Puppy extends Dog {
+    static class Puppy extends Dog {
         void weep() {
             System.out.println("Puppy is weeping......");
         }
     }
-
-    
+    static class Fish extends Animal{
+        void swing(){
+            System.out.println("Fish can swiming ....");
+        }
+    }
     public static void main(String[] args) {
-        inheritance outer = new inheritance();
-        Puppy puppy = outer.new Puppy();
-        puppy.eat();   
-        puppy.bark();  
-        puppy.weep();  
+        Puppy puppy = new Puppy();
+        Fish ruih=new Fish();
+        ruih.swing();
+        puppy.eat();
+        puppy.bark();
+        puppy.weep();
     }
 }
