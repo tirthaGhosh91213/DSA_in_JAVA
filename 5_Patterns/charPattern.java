@@ -7,7 +7,7 @@ public class charPattern{
           System.out.print(" "+ch);
           ch++;
         }
-        System.err.println();
+        System.err.println( );
       }
   }
 }
