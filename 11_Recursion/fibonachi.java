@@ -21,7 +21,7 @@ public class fibonachi {
     // int n=6;
     int arr[]={1,2,4,5};
     boolean result=isShorted(arr,0);
-    System.out.println(result);
+    System.out.println("The array is "+ result);
   }
 }
 
