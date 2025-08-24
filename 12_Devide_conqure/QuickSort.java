@@ -1,12 +1,11 @@
 public class QuickSort {
-   // Partition function
+
     public static int partition(int arr[], int low, int high) {
-        int pivot = arr[high]; // last element as pivot
-        int i = low;           // place for swapping
+        int pivot = arr[high]; 
+        int i = low;         
 
         for (int j = low; j < high; j++) {
             if (arr[j] <= pivot) {
-                // swap arr[i] and arr[j]
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -14,21 +13,20 @@ public class QuickSort {
             }
         }
 
-        // Place pivot in the correct position
+        
         int temp = arr[i];
         arr[i] = arr[high];
         arr[high] = temp;
 
-        return i; // pivot index
+        return i; 
     }
 
-    // QuickSort function
     public static void quickSort(int arr[], int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
 
-            quickSort(arr, low, pi - 1);  // Left side
-            quickSort(arr, pi + 1, high); // Right side
+            quickSort(arr, low, pi - 1);  
+            quickSort(arr, pi + 1, high); 
         }
     }
 
