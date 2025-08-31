@@ -1,4 +1,4 @@
-public class superKey {
+public class superKey{
   public static void main(String[] args) {
     Fish f1=new Fish();
     System.out.println(f1.color);
