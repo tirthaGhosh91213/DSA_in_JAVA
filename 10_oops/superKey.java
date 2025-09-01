@@ -9,8 +9,6 @@ class Animal{
   Animal(){
 System.out.println("animal is called....");
   }
-    
-  
 }
 class Fish extends Animal{
   Fish(){
