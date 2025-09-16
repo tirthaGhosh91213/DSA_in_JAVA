@@ -26,7 +26,8 @@ public class nQueen {
 
     public static void nQueens(char board[][], int row) {
         if (row == board.length) {
-            printBoard(board);
+            // printBoard(board);
+            count++;
             return;
         }
 
@@ -41,7 +42,7 @@ public class nQueen {
 
     public static void printBoard(char board[][]) {
         System.out.println("__________Board_______________");
-        for (int i = 0; i < board.length; i++) {
+        for(int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
                 System.out.print(board[i][j] + " ");
             }
@@ -49,11 +50,13 @@ public class nQueen {
         }
     }
 
+    static  int count =0;
+
+
     public static void main(String[] args) {
-        int n = 4; // you can change N here
+        int n = 5; // you can change N here
         char board[][] = new char[n][n];
 
-        // initialize board with 'x'
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 board[i][j] = 'x';
@@ -61,5 +64,6 @@ public class nQueen {
         }
 
         nQueens(board, 0);
+        System.out.println("The total ways of the n queen is :- "+count);
     }
 }
