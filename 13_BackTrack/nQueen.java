@@ -39,6 +39,7 @@ public class nQueen {
             }
         }
     }
+    
 
     public static void printBoard(char board[][]) {
         System.out.println("__________Board_______________");
