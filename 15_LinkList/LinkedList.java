@@ -42,7 +42,7 @@ public class LinkedList {
       System.out.print(temp.data+"-> ");
       temp=temp.next;
     }
-    System.out.println("null");
+    System.out.println(" null");
   }
   public void addMiddle(int idx,int data){
     if(idx==0){
