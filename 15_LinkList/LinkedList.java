@@ -34,7 +34,7 @@ public class LinkedList {
   }
   public void print(){
     if(head==null){
-      System.out.println("LinkedList is empty");
+      System.out.println("LinkedList  is empty");
       return;
     }
     Node temp=head;
