@@ -72,7 +72,7 @@ public class LinkedList {
   
     ll.addLast(4);
     ll.print();
-    ll.addMiddle(2, 9);
+    ll.addMiddle(2,  9);
     ll.print();
     System.out.println(size);
   }
