@@ -1,0 +1,87 @@
+
+public class basic2 {
+  public static void update(int marks[]){
+    for(int i=0;i<marks.length;i++){
+      marks[i]+=1;
+    }
+}
+public static int linerSearch(int arr2[],int key){
+  for(int i=0;i<arr2.length;i++){
+    if(arr2[i]==key){
+      return arr2[i];
+      
+    }
+  }
+   return -1;
+}
+public static void largestElement(int arr[]){
+  int min=Integer.MIN_VALUE;
+  for(int i=0;i<arr.length;i++){
+    if(arr[i]>min){
+      min=arr[i];
+    }
+  }
+   System.out.println("The max value is "+min);
+}
+public static void reverseArr(int arr[]){
+for(int i=arr.length-1 ; i>=0 ; i--){
+  System.out.print(arr[i]+" ");
+}
+}
+public static void reverseArr2(int arr[]){
+  int start=0,end=arr.length-1;
+  while(start<end){
+    int temp=arr[start];
+    arr[start]=arr[end];
+    arr[end]=temp;
+    start++;
+    end--;
+
+  }
+  for(int i=0;i<arr.length;i++){
+    System.out.print(arr[i]+" ");
+  }
+  
+}
+
+  public static void main(String[] args) {
+/* 
+    int arr[]=new int[50];
+    Scanner sc=new Scanner(System.in);
+
+    arr[0]=sc.nextInt();
+    System.out.println("The Physics naumber :- "+arr[0]);
+    arr[1]=sc.nextInt();
+    System.out.println("The cheminstry number is :- "+arr[1]);
+
+    int percentage =(arr[0]+arr[1])/2;
+    System.out.println("The avg is :- "+percentage+"%");
+
+    */
+/* 
+  int marks[]={67,78,90};
+  update(marks);
+  for(int i=0;i<marks.length;i++){
+    System.out.println("The updated marks is "+marks[i]);
+  }
+    */
+ 
+int arr2[]={20,2,18,90,109,3};
+  reverseArr2(arr2);
+  // reverseArr(arr2);
+  // largestElement(arr2);
+
+/*
+  int key=18;
+  int result =linerSearch(arr2, key);
+  if(result==-1){ 
+    System.out.println("Not found ");
+  }else{
+    System.out.println("The element is found in the index "+result);
+  }
+
+*/
+  
+
+  }
+}
