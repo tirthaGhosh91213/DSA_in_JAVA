@@ -26,6 +26,33 @@ public class basic2 {
         }
         System.out.println("The max value is " + min);
     }
+public static void subArray(int arr[]){
+    for(int i=0;i<arr.length;i++){
+        for(int j=i;j<arr.length;j++){
+            for(int k=i;k<j;k++){
+                System.out.print(arr[k]+"");
+            }
+             System.out.println();
+            
+        }
+        System.out.println();
+    }
+   
+}
+    public static void pairArray(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            for(int j=i+1;j<arr.length;j++){
+                System.out.print("("+arr[i]+","+arr[j]+")");
+            }
+             System.out.println();
+        }
+        int n=arr.length;
+        
+            int countPairs=(n*(n-1))/2;
+            System.out.println("The total number of paies "+countPairs);
+        
+       
+    }
 
     public static void reverseArr(int arr[]) {
         for (int i = arr.length - 1; i >= 0; i--) {
@@ -96,7 +123,10 @@ public class basic2 {
         } else {
             System.out.println("The element is found in the index " + result);
         }
-        // reverseArr(arr2);
+
+        // pairArray(arr2);
+        subArray(arr2);
+
         // largestElement(arr2);
 
         /*
