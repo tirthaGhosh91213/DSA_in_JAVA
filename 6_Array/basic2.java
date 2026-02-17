@@ -165,8 +165,22 @@ for(int i=0;i<n;i++){
 return trappedwater;
 
 }
+public static int buyAndSell(int prices[]){
+    int buyPrice=Integer.MAX_VALUE;
+    int maxProfit=0;
+    for(int i=0;i<prices.length;i++){
+        if(buyPrice<prices[i]){
+            int profit=prices[i]-buyPrice;
+            maxProfit=Math.max(maxProfit, profit);
+        }else{
+            buyPrice=prices[i];
+        }
+        
+    }
+return maxProfit;
+}
     public static void main(String[] args) {
-        /* 
+ /* 
     int arr[]=new int[50];
     Scanner sc=new Scanner(System.in);
 
@@ -178,17 +192,22 @@ return trappedwater;
     int percentage =(arr[0]+arr[1])/2;
     System.out.println("The avg is :- "+percentage+"%");
 
-         */
+*/
+
  /* 
   int marks[]={67,78,90};
   update(marks);
   for(int i=0;i<marks.length;i++){
     System.out.println("The updated marks is "+marks[i]);
   }
-         */
+
+*/
 
         int arr2[] = {4,2,0,6,3,2,5};
-        System.out.println("The max water is :- "+trappingRainWater(arr2));
+
+        // System.out.println("The max water is :- "+trappingRainWater(arr2));
+
+        System.out.println("The max profite is :- "+buyAndSell(arr2));
 
         // reverseArr2(arr2);
 
@@ -212,7 +231,7 @@ return trappedwater;
 
         // largestElement(arr2);
 
-        /*
+ /*
         int key=18;
         int result =linerSearch(arr2, key);
         if(result==-1){ 
@@ -220,7 +239,7 @@ return trappedwater;
             }else{
                 System.out.println("The element is found in the index "+result);
         }
-        */
+*/
 
     }
 }
