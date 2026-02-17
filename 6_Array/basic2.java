@@ -129,7 +129,14 @@ public class basic2 {
 public static void KadaneSubArrSum(int arr[]){
     int max=Integer.MIN_VALUE;
     int sum=0;
-    
+    for(int i=0;i<arr.length;i++){
+        sum+=arr[i];
+        max=Math.max(max, sum);
+    }
+    if(sum<0){
+        sum=0;
+    }
+    System.out.println("The max sum is :- "+max);
 }
     public static void main(String[] args) {
         /* 
@@ -153,7 +160,7 @@ public static void KadaneSubArrSum(int arr[]){
   }
          */
 
-        int arr2[] = {20, 2, 18, 90, 109, 3};
+        int arr2[] = {-20, -2, -18, -90, -109, -3};
 
         // reverseArr2(arr2);
 
@@ -171,7 +178,9 @@ public static void KadaneSubArrSum(int arr[]){
 
         // subArray(arr2);
 
-        subArrSumOptimized(arr2);
+        // subArrSumOptimized(arr2);
+
+        KadaneSubArrSum(arr2);
 
         // largestElement(arr2);
 
