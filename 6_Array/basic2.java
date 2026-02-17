@@ -138,6 +138,33 @@ public static void KadaneSubArrSum(int arr[]){
     }
     System.out.println("The max sum is :- "+max);
 }
+public static int trappingRainWater(int height[]){
+// calculate left max boundary array
+int leftMax[]=new int[height.length];
+leftMax[0]=height[0];
+for(int i=1;i<height.length;i++){
+    leftMax[i]=Math.max(height[i], leftMax[i-1]);
+}
+
+// calculate right max array
+int n=height.length;
+int rightMax[]=new int[n];
+rightMax[n-1]=height[n-1];
+for(int i=n-2;i>=0;i--){
+    rightMax[i]=Math.max(height[i], rightMax[i+1]);
+}
+// loop
+
+int trappedwater=0;
+for(int i=0;i<n;i++){
+    // water level =min(leftmax , rightmax)
+    int waterLevel=Math.min(leftMax[i],rightMax[i]);
+    // trapped water =waterLevel -height[i]
+    trappedwater+=waterLevel-height[i];
+}
+return trappedwater;
+
+}
     public static void main(String[] args) {
         /* 
     int arr[]=new int[50];
@@ -160,7 +187,8 @@ public static void KadaneSubArrSum(int arr[]){
   }
          */
 
-        int arr2[] = {-20, -2, -18, -90, -109, -3};
+        int arr2[] = {4,2,0,6,3,2,5};
+        System.out.println("The max water is :- "+trappingRainWater(arr2));
 
         // reverseArr2(arr2);
 
@@ -180,7 +208,7 @@ public static void KadaneSubArrSum(int arr[]){
 
         // subArrSumOptimized(arr2);
 
-        KadaneSubArrSum(arr2);
+        // KadaneSubArrSum(arr2);
 
         // largestElement(arr2);
 
