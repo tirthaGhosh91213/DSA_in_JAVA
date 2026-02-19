@@ -30,6 +30,30 @@ public class bubbleSelectionInser {
 
     }
 
+    public static void selectionSort2(int arr[]){
+        for(int i=0;i<arr.length-1;i++){
+            int small=i;
+            for(int j=i+1;j<arr.length-1;j++){
+                if(small>arr[j]){
+                    small=j;
+                }
+            }
+            int temp=arr[small];
+            arr[small]=arr[i];
+            arr[i]=temp;
+        }
+    }
+    public static void insertionSort2(int arr[]){
+        for(int i=1;i<arr.length;i++){
+            int current =arr[i];
+            int prev=i-1;
+            while(prev>=0 && arr[prev]>current){
+                arr[prev+1]=arr[prev];
+                prev--;
+            }
+            arr[prev+1]=current;
+        }
+    }
     public static void insertionSort(int[] arr) {
         int n = arr.length;
         for (int i = 1; i < n; i++) {
@@ -69,7 +93,7 @@ public class bubbleSelectionInser {
     }
 
     public static void main(String[] args) {
-        int[] arr = {100, 50, 64, 76, 92};
+        int[] arr = {100, 50, 64, 76, 92,9};
         int[] bubbleArray = {64, 34, 25, 12, 22, 11, 90};
         int[] insertionArray = {12, 11, 13, 5, 6};
         int[] selectionArray = {64, 25, 12, 22, 11};
@@ -84,8 +108,15 @@ public class bubbleSelectionInser {
         BubbleShort2(arr);
         printArray(arr);
  */
-BubbleShort2(arr);
+        // BubbleShort2(arr);
+        // printArray(arr);
+
+        // selectionSort(arr);
+        // printArray(arr);
+
+        insertionSort2(arr);
         printArray(arr);
+
         // Insertion Sort
         /*
         System.out.println("\nOriginal Array for Insertion Sort=");
