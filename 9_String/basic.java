@@ -18,6 +18,42 @@ public class basic {
      System.out.println("Not a palindrome ");
      
   }
+  
+  public static void getShortestPath(String str){
+    int x=0,y=0;
+    for(int i=0;i<str.length();i++){
+      if(str.charAt(i)=='E'){
+        x++;
+      }
+      else if(str.charAt(i)=='W'){
+        x--;
+      }
+      else if(str.charAt(i)=='N'){
+        y++;
+      }
+      else y--;
+    }
+    int x2=x*x;
+    int y2=y*y;
+    double root =Math.sqrt(x2+y2);
+    System.out.print("The shortest root is :- "+root);
+
+  }
+  public static void checkEqale(String str1,String str2){
+    if(str1.equals(str2)){
+      System.out.println("The strings are quales ");
+    }
+    else{
+      System.out.println("Not quales ");
+    }
+  }
+  public static void printSubstring(String str,int st,int en ){
+    String subStr="";
+    for(int i=st;i<en;i++){
+      subStr+=str.charAt(i);
+    }
+    System.out.println(subStr);
+  }
   public static void main(String[] args) {
 
     // char ch[]={'a,'b,'c','d','e'};
@@ -36,17 +72,20 @@ public class basic {
     //   System.out.print(fullName.charAt(i)+" ");
     // }
 
-    char ch[]={'q','r','s','t'};
-    String str="Tirtha"; 
+    // char ch[]={'q','r','s','t'};
+    // String str="Tirtha"; 
 
     // System.out.println(ch);
     // System.out.println(str);
 
     String fName="noon";
-    String lName="Ghosh";
+    String lName="WNEENESENNN";
     String Fullname =fName+" "+lName;
     // printChar(Fullname);
-    checkPalindrome(fName);
+    // checkPalindrome(Fullname);
+    // getShortestPath(lName);
+    checkEqale(fName,lName);
+    printSubstring(lName,0,5);
 
   }
 }
