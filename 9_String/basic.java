@@ -94,9 +94,9 @@ public class basic {
     String fruits[]={"apple","mango","banana"};
     printLargest(fruits);
 
-    StringBuffer sb=new StringBuffer("");
+    StringBuilder sb=new StringBuilder("");
     for(char ch='a';ch<'z';ch++){
-      sb.append(ch+"");
+      sb.append(ch+" ");
     }
     System.out.println(sb);
     // printChar(Fullname);
