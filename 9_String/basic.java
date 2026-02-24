@@ -54,6 +54,16 @@ public class basic {
     }
     System.out.println(subStr);
   }
+  public static void printLargest(String str[]){
+    String largest=str[0];
+    for(int i=0;i<str.length;i++){
+      if(largest.compareToIgnoreCase(str[i])<0){
+        largest=str[i];
+
+      }
+    }
+    System.out.println(largest);
+  }
   public static void main(String[] args) {
 
     // char ch[]={'a,'b,'c','d','e'};
@@ -81,11 +91,21 @@ public class basic {
     String fName="noon";
     String lName="WNEENESENNN";
     String Fullname =fName+" "+lName;
+    String fruits[]={"apple","mango","banana"};
+    printLargest(fruits);
+
+    StringBuffer sb=new StringBuffer("");
+    for(char ch='a';ch<'z';ch++){
+      sb.append(ch+"");
+    }
+    System.out.println(sb);
     // printChar(Fullname);
     // checkPalindrome(Fullname);
     // getShortestPath(lName);
-    checkEqale(fName,lName);
-    printSubstring(lName,0,5);
+    // checkEqale(fName,lName);
+    // printSubstring(lName,0,5);
+    // System.out.println(Fullname.substring(0,5));
+
 
   }
 }
