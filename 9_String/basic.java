@@ -64,6 +64,39 @@ public class basic {
     }
     System.out.println(largest);
   }
+  public static void ConvertToUppercase(String str){
+    StringBuilder sb = new StringBuilder("");
+    char ch=Character.toUpperCase(str.charAt(0));
+    sb.append(ch);
+    for(int i=1;i<str.length();i++){
+      if(str.charAt(i)==' '&& i<str.length()-1){
+        sb.append(str.charAt(i));
+        i++;
+        sb.append(Character.toUpperCase(str.charAt(i)));
+
+      }
+      else{
+        sb.append(str.charAt(i));
+      }
+    }
+    System.out.println(sb);
+
+  }
+  public static void compressString(String str){
+    String newstr="";
+    for(int i=0;i<str.length();i++){
+      Integer count =1;
+      while(i<str.length()-1 && str.charAt(i)==str.charAt(i+1)){
+        count++;
+        i++;
+      }
+      newstr+=str.charAt(i);
+      if(count>1){
+        newstr+=count.toString();
+      }
+    }
+    System.out.println(newstr);
+  }
   public static void main(String[] args) {
 
     // char ch[]={'a,'b,'c','d','e'};
@@ -99,7 +132,11 @@ public class basic {
       sb.append(ch+" ");
     }
     System.out.println(sb);
-    // printChar(Fullname);
+    compressString(lName);
+
+    String str="hi i am tirtha";
+    ConvertToUppercase(str);
+    printChar(Fullname);
     // checkPalindrome(Fullname);
     // getShortestPath(lName);
     // checkEqale(fName,lName);
