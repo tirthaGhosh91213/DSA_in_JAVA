@@ -17,6 +17,21 @@ public class binaryString {
     System.out.print(n+" ");
     printDec(n-1);
   }
+  public static int sumNatural(int n){
+    if(n==1){
+      // System.out.println(n);
+      return 1;
+    
+    }
+    return n+sumNatural(n-1);
+  }
+   public static int factorial(int n){
+    if(n==0 || n==1){
+      return 1;
+    }
+ return  n*factorial(n-1);
+    
+  }
    public static void printInc(int n){
     if(n==1){
       System.out.print(n+" ");
@@ -28,6 +43,9 @@ public class binaryString {
   }
   public static void main(String[] args) {
     // binaryString(3, 0, "");
-    printInc(10);
+    // printInc(10);
+    // System.out.println("The factorila is :- "+factorial(3));
+    System.out.println("The sum of N natural number is  is :- "+sumNatural(5));
+    
   }
 }
